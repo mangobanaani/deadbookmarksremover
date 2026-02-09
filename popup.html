@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <h1 data-i18n="appTitle">Dead Bookmarks Remover</h1>
+
+    <div id="last-scan-info" hidden></div>
+
+    <div id="controls">
+      <button id="scan-btn" data-i18n="scanBtn">Scan Bookmarks</button>
+      <button id="stop-btn" hidden data-i18n="stopBtn">Stop</button>
+    </div>
+
+    <div id="progress-section" hidden>
+      <div id="progress-bar"><div id="progress-fill"></div></div>
+      <div id="progress-text">0 / 0 checked</div>
+    </div>
+
+    <div id="results" hidden>
+      <div id="summary"></div>
+
+      <div id="filter-bar" hidden>
+        <select id="filter-error-type">
+          <option value="all" data-i18n="filterAll">All errors</option>
+          <option value="http-4xx" data-i18n="filter4xx">4xx errors</option>
+          <option value="http-5xx" data-i18n="filter5xx">5xx errors</option>
+          <option value="unreachable" data-i18n="filterUnreachable">Unreachable</option>
+        </select>
+        <select id="filter-folder">
+          <option value="all" data-i18n="filterAllFolders">All folders</option>
+        </select>
+        <select id="filter-sort">
+          <option value="order" data-i18n="sortDefault">Default order</option>
+          <option value="title" data-i18n="sortTitle">By title</option>
+          <option value="domain" data-i18n="sortDomain">By domain</option>
+          <option value="status" data-i18n="sortStatus">By status</option>
+        </select>
+      </div>
+
+      <label id="select-all-wrap" hidden><input type="checkbox" id="select-all"> <span data-i18n="selectAll">Select all</span></label>
+      <ul id="dead-list"></ul>
+      <button id="remove-selected-btn" hidden data-i18n="removeSelected">Remove Selected</button>
+
+      <div id="export-bar" hidden>
+        <button id="export-json-btn" data-i18n="exportJson">Export JSON</button>
+        <button id="export-csv-btn" data-i18n="exportCsv">Export CSV</button>
+      </div>
+    </div>
+
+    <div id="duplicates-section" hidden>
+      <h2 data-i18n="duplicatesTitle">Duplicate Bookmarks</h2>
+      <div id="duplicates-list"></div>
+      <button id="remove-dup-selected-btn" data-i18n="removeDupSelected">Remove Selected Duplicates</button>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

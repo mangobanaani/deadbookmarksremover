@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.crx
+*.pem
+*.zip
+web-ext-artifacts/
+.env

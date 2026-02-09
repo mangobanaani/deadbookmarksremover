@@ -1,0 +1,137 @@
+{
+  "extName": {
+    "message": "Dead Bookmarks Remover",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Find and remove dead bookmarks (404, unreachable, etc.)",
+    "description": "Extension description"
+  },
+  "appTitle": {
+    "message": "Dead Bookmarks Remover",
+    "description": "Popup heading"
+  },
+  "scanBtn": {
+    "message": "Scan Bookmarks",
+    "description": "Scan button label"
+  },
+  "stopBtn": {
+    "message": "Stop",
+    "description": "Stop button label"
+  },
+  "progressText": {
+    "message": "$1 / $2 checked",
+    "description": "Progress text",
+    "placeholders": {
+      "1": { "content": "$1", "example": "42" },
+      "2": { "content": "$2", "example": "100" }
+    }
+  },
+  "scanComplete": {
+    "message": "Scan complete.",
+    "description": "Scan complete label"
+  },
+  "scanStopped": {
+    "message": "Scan stopped.",
+    "description": "Scan stopped label"
+  },
+  "foundDead": {
+    "message": "Found $1 dead bookmark(s) out of $2 checked.",
+    "description": "Dead bookmarks found summary",
+    "placeholders": {
+      "1": { "content": "$1", "example": "5" },
+      "2": { "content": "$2", "example": "100" }
+    }
+  },
+  "selectAll": {
+    "message": "Select all",
+    "description": "Select all checkbox label"
+  },
+  "removeSelected": {
+    "message": "Remove Selected",
+    "description": "Remove selected button"
+  },
+  "confirmRemove": {
+    "message": "Confirm remove $1 bookmark(s)?",
+    "description": "Confirm removal prompt",
+    "placeholders": {
+      "1": { "content": "$1", "example": "3" }
+    }
+  },
+  "removing": {
+    "message": "Removing...",
+    "description": "Removing in progress"
+  },
+  "allRemoved": {
+    "message": "All dead bookmarks removed.",
+    "description": "All removed message"
+  },
+  "recheck": {
+    "message": "Re-check",
+    "description": "Re-check button label"
+  },
+  "checking": {
+    "message": "Checking...",
+    "description": "Checking in progress"
+  },
+  "alive": {
+    "message": "Alive",
+    "description": "Bookmark is alive after recheck"
+  },
+  "filterAll": {
+    "message": "All errors",
+    "description": "Filter: all error types"
+  },
+  "filter4xx": {
+    "message": "4xx errors",
+    "description": "Filter: 4xx errors"
+  },
+  "filter5xx": {
+    "message": "5xx errors",
+    "description": "Filter: 5xx errors"
+  },
+  "filterUnreachable": {
+    "message": "Unreachable",
+    "description": "Filter: unreachable"
+  },
+  "filterAllFolders": {
+    "message": "All folders",
+    "description": "Filter: all folders"
+  },
+  "sortDefault": {
+    "message": "Default order",
+    "description": "Sort: default"
+  },
+  "sortTitle": {
+    "message": "By title",
+    "description": "Sort: by title"
+  },
+  "sortDomain": {
+    "message": "By domain",
+    "description": "Sort: by domain"
+  },
+  "sortStatus": {
+    "message": "By status",
+    "description": "Sort: by status"
+  },
+  "exportJson": {
+    "message": "Export JSON",
+    "description": "Export JSON button"
+  },
+  "exportCsv": {
+    "message": "Export CSV",
+    "description": "Export CSV button"
+  },
+  "duplicatesTitle": {
+    "message": "Duplicate Bookmarks",
+    "description": "Duplicates section heading"
+  },
+  "removeDupSelected": {
+    "message": "Remove Selected Duplicates",
+    "description": "Remove selected duplicates button"
+  },
+  "lastScanned": {
+    "message": "Last scanned:",
+    "description": "Last scanned label"
+  }
+}
